@@ -28,7 +28,7 @@ def playlistadd(youtube, tracks, playlistid):
     for track in tracks:
         #video search
         search_response = youtube.search().list(
-            q=f'{track['name']} {track['artists']}',
+            q=f"{track['name']} {track['artists']}",
             part='id',
             type='video',
             maxResults=1
