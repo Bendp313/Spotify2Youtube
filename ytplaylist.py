@@ -3,9 +3,6 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-from ids import YT_API
-API_KEY = YT_API
-
 def authenticate_youtube():
     flow = InstalledAppFlow.from_client_secrets_file("client_secret.json", scopes = ["https://www.googleapis.com/auth/youtube"])
     flow.run_local_server(port=8888, prompt="consent", authorization_prompt_message="")

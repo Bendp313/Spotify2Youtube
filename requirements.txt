@@ -1,0 +1,8 @@
+Flask==3.0.3
+google-api-core==2.19.1
+google-api-python-client==2.138.0
+google-auth-oauthlib==1.2.1
+python-dotenv==1.0.1
+spotipy==2.24.0
+waitress==3.0.0
+

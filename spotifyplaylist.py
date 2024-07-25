@@ -1,11 +1,14 @@
 import spotipy
-from ids import CLIENT_ID, CLIENT_SECRET
 from spotipy.oauth2 import SpotifyClientCredentials
+from dotenv import load_dotenv
+import os
+
 
 def get_playlist_tracks(playlist_id):
     # spotipy client
     #put client id as CLIENT_ID and client secret as CLIENT_SECRET
-    client_credentials_manager = SpotifyClientCredentials(client_id= CLIENT_ID, client_secret = CLIENT_SECRET)
+
+    client_credentials_manager = SpotifyClientCredentials(client_id= os.getenv("CLIENT_ID"), client_secret = os.getenv("CLIENT_SECRET"))
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
     # playlist info

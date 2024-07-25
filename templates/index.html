@@ -1,12 +1,22 @@
-</style>
-<script src=""></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify to Youtube</title>
+    <link href="{{ url_for('static',filename='styles.css')}}
+    " rel="stylesheet" />
+</head>
+
 <body>
     <h1>Spotify to Youtube</h1>
+    <p>Enter spotify playlist link</h2>
     <form action="run" method="post">
         <br>
-        <input type="text" name="pl_input">
+        <input type="text" name="pl_input" id ="playlist">
         <br>
-        <input type="submit" value="Submit" id="run">
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
